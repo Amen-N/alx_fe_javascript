@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dynamic Quote Generator</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f9f9f9;
+      padding: 20px;
+    }
+    #quoteDisplay {
+      margin: 20px 0;
+      padding: 15px;
+      background: #fff;
+      border-left: 4px solid #007acc;
+      font-size: 1.2em;
+    }
+    input, button {
+      margin: 5px;
+      padding: 8px;
+      font-size: 1em;
+    }
+  </style>
+</head>
+<body>
+  <h1>Dynamic Quote Generator</h1>
+
+  <!-- Display area for quotes -->
+  <div id="quoteDisplay">Click "Show New Quote" to see something inspiring.</div>
+  <button id="showQuoteButton">Show New Quote</button>
+
+  <h2>Add Your Own Quote</h2>
+  <div>
+    <input id="quoteInput" type="text" placeholder="Write your quote here">
+    <input id="categoryInput" type="text" placeholder="Category of the quote">
+    <button id="addQuoteButton">Add Quote</button>
+  </div>
+
+  <h2>Manage Quotes (Import/Export)</h2>
+  <!-- Export to JSON -->
+  <button id="exportButton">Export Quotes as JSON</button>
+
+  <!-- Import from JSON -->
+  <input type="file" id="importFile" accept=".json">
+
+  <!-- Link to JavaScript file -->
+  <script src="script.js"></script>
+</body>
+</html>
